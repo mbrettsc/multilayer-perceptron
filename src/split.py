@@ -15,8 +15,8 @@ def main():
 
     train, val = train_test_split(data, test_size=0.2, random_state=42)
 
-    train.to_csv('../data/processed/train.csv', index=False)
-    val.to_csv('../data/processed/val.csv', index=False)
+    train.to_csv('../data/processed/training.csv', index=False)
+    val.to_csv('../data/processed/validation.csv', index=False)
 
 
 if __name__ == '__main__':
