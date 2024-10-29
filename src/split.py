@@ -13,10 +13,10 @@ def main():
         print('Error reading file:', e)
         return
 
-    train, test = train_test_split(data, test_size=0.2, random_state=42)
+    train, val = train_test_split(data, test_size=0.2, random_state=42)
 
     train.to_csv('../data/processed/train.csv', index=False)
-    test.to_csv('../data/processed/test.csv', index=False)
+    val.to_csv('../data/processed/val.csv', index=False)
 
 
 if __name__ == '__main__':
